@@ -5,13 +5,11 @@
     <title>Đăng Ký</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="../../styles/css/style.css">
-
+    <link rel="stylesheet" href="../../styles/styleTad.css">
+    
 </head>
 
 <body>
@@ -34,29 +32,32 @@
                                     <input type="text" class="form-control" placeholder="Tên của bạn" required>
                                 </div>
 
-                                <div class="form-group mb-3">
-                                    <label class="label" for="email">Email</label>
-                                    <input type="text" class="form-control" placeholder="@stu.ptit.edu.vn" required>
+                                <div class="form-group mb-3 position-relative"  >
+                                    <label class="label" for="email" >Email</label>
+                                    <input type="text" class="form-control" id="email" placeholder="@stu.ptit.edu.vn" oninput="checkValidEmail()" required>
+                                    <p id="emailError" class="position-absolute text-left" style="color: red;"></p>
                                 </div>
 
                                 <div class="form-group mb-3">
                                     <label class="label" for="password">Mật khẩu</label>
-                                    <input type="password" class="form-control" placeholder="Mật khẩu" required>
+                                    <input type="password" class="form-control" id="password" placeholder="Mật khẩu" oninput="checkValidPassword()" required>
+                                    <p id="passwordError" class="position-absolute text-left" style="color: red;"></p>
                                 </div>
 
                                 <div class="form-group mb-3">
                                     <label class="label" for="password">Nhập lại mật khẩu</label>
-                                    <input type="password" class="form-control" placeholder="Mật khẩu" required>
+                                    <input type="password" class="form-control" id="confirmPassword" placeholder="Mật khẩu" oninput="checkValidConfirmPassword()" required>
+                                    <p id="confirmError" class="position-absolute text-left" style="color: red;"></p>
                                 </div>
 
-                                <div class="form-group">
-                                    <button type="submit" class="form-control btn btn-primary rounded submit px-3">Đăng
+                                <div class="form-group" style="padding-top: 10px;">
+                                    <button type="submit" class="form-control btn btn-primary rounded submit px-3" onclick="checkSignUp()">Đăng
                                         kí</button>
                                 </div>
                                 <div class="form-group d-md-flex">
                                     <div class="w-100 text-left d-flex justify-content-center">
                                         <label class="checkbox-wrap checkbox-primary mb-0">Đồng ý với điều khoản
-                                            <input type="checkbox">
+                                            <input type="checkbox" id="check">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
@@ -71,11 +72,11 @@
         </div>
     </section>
 
-    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-
+    <script src="js/main.js"></script> -->
+    <script src="scripts/authentication.js"></script>
 </body>
 
 </html>

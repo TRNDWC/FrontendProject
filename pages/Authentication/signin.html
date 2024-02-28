@@ -31,15 +31,14 @@
 							<form action="#" class="signin-form">
 								<div class="form-group mb-3">
 									<label class="label" for="name">Email</label>
-									<input type="text" class="form-control" placeholder="@stu.ptit.edu.vn" required>
+									<input id="email" type="text" class="form-control" placeholder="@stu.ptit.edu.vn" required>
 								</div>
 								<div class="form-group mb-3">
 									<label class="label" for="password">Mật khẩu</label>
-									<input type="password" class="form-control" placeholder="Mật khẩu" required>
+									<input id="password" type="password" class="form-control" placeholder="Mật khẩu" required>
 								</div>
 								<div class="form-group">
-									<button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign
-										In</button>
+									<button type="submit" class="form-control btn btn-primary rounded submit px-3" onclick="checkSignIn()">Đăng nhập</button>
 								</div>
 								<div class="form-group d-md-flex">
 									<div class="w-50 text-left">
@@ -61,10 +60,10 @@
 		</div>
 	</section>
 
-	<script src="js/jquery.min.js"></script>
+	<!-- <script src="js/jquery.min.js"></script>
 	<script src="js/popper.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/main.js"></script> -->
 	<script src="scripts/authentication.js"></script>
 </body>
 </html>

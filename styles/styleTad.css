@@ -1,0 +1,20 @@
+#emailError {
+    /* can phai */
+    color: red;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+#passwordError {
+    /* can phai */
+    color: red;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+#confirmError {
+    /* can phai */
+    color: red;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
