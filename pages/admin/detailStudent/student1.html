@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Detail</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../../styles/css/styleLTD.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-3">
+            <div class="inner-logo"><a href="../dashBoard.html">ADMIN </a></div>
+          </div>
+          <div class="col-9">
+            <div class="text-right">
+              <a class="btn btn-primary btn-sm" href="#">Lê Tiến Đạt </a
+              ><a class="btn btn-danger btn-sm" href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body">
+      <div class="sider">
+        <div class="inner-menu">
+          <ul>
+            <li><a href="../dashBoard.html">Tổng quan </a></li>
+            <li><a href="../user.html">Danh sách học viên</a></li>
+            <li><a href="../contestManage.html">Danh sách bài thi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <h1 class="mb-4">Chi tiết học viên</h1>
+        <h2 class="mb-4"></h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              class="img-fluid"
+              src="../../../images/user_ava.jpg"
+              alt="Hình ảnh"
+              style="height: auto; width: auto"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+                <label for="name"><b> Họ và tên </b></label
+                ><input
+                    class="form-control"
+                    id="name"
+                    type="text"
+                    name="name"
+                    value="Lê Tiến Đạt"
+                    readonly="readonly"
+                />
+                <div>
+                    <label for="email"><b> Email </b></label>
+                    <input
+                        class="form-control"
+                        id="email"
+                        type="text"
+                        name="email"
+                        value="ltd123@gmail.com"
+                    >
+                </div>
+                <div>
+                    <label for="password"><b> Mật khẩu </b></label>
+                    <input
+                        class="form-control"
+                        id="password"
+                        type="text"
+                        name="phone"
+                        value="123456"
+                    >
+            </div>
+            <span
+              ><b>Trạng thái: </b
+              ><a class="badge bg-success">Đang hoạt động</a></span
+            ><br />
+            <br />
+            <a class="btn btn-warning" href="#">Chỉnh sửa </a>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="mt-4">Lịch sử làm bài</h2>
+          <div class="card mb-3">
+            <div class="card-header">Bộ lọc và tìm kiếm</div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-6">
+                  <button
+                    class="btn btn-sm ml-1 btn-outline-success active"
+                    button-status=""
+                  >
+                    Tất cả
+                  </button>
+                  <button
+                    class="btn btn-sm ml-1 btn-outline-success"
+                    button-status="active"
+                  >
+                    Đang hoạt động
+                  </button>
+                  <button
+                    class="btn btn-sm ml-1 btn-outline-success"
+                    button-status="deactive"
+                  >
+                    Đã kết thúc
+                  </button>
+                </div>
+                <div class="col-6">
+                  <form id="form-search">
+                    <div class="input-group mb-3">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Tìm kiếm bài thi"
+                        name="keyword"
+                        value=""
+                      />
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit">
+                          Tìm kiếm
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">Danh sách nộp bài</div>
+            <div class="card-body">
+              <!-- table history submit of 1 student -->
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">STT</th>
+                        <th scope="col">Tên bài thi</th>
+                        <th scope="col">Thời gian làm bài</th>
+                        <th scope="col">Điểm</th>
+                        <th scope="col">Trạng thái</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Bài thi 1</td>
+                        <td>20 phút</td>
+                        <td>10</td>
+                        <td>
+                        <a class="badge bg-success">Hoàn thành</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Bài thi 2</td>
+                        <td>20 phút</td>
+                        <td>9</td>
+                        <td>
+                        <a class="badge bg-success">Hoàn thành</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Bài thi 3</td>
+                        <td>20 phút</td>
+                        <td>8</td>
+                        <td>
+                        <a class="badge bg-success">Hoàn thành</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Bài thi 4</td>
+                        <td>20 phút</td>
+                        <td>7</td>
+                        <td>
+                        <a class="badge bg-success">Hoàn thành</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Bài thi 5</td>
+                        <td>20 phút</td>
+                        <td>5</td>
+                        <td>
+                        <a class="badge bg-danger">Chưa hoàn thành</a>
+                        </td>
+                    </tr>
+                    </tbody>
+            </div>
+          </div>
+        </div>
+
+        <div class="row"></div>
+        <script src="/admin/js/product.js"></script>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../../styles/css/styleLTD.css" />
+  </body>
+</html>
