@@ -14,21 +14,24 @@
                 "testId": 1,
                 "title": "Bài kiểm tra 15P",
                 "score": 10,
-                "time": "2021-07-01T00:00:00Z"
+                "time": "2021-07-01T00:00:00Z",
+                "status": "active"
             },
             {
                 "id": 2,
                 "testId": 2,
                 "title": "Bài kiểm tra 30P",
                 "score": 10,
-                "time": "2021-07-02T00:00:00Z"
+                "time": "2021-07-02T00:00:00Z",
+                "status": "active"
             },
             {
                 "id": 3,
                 "testId": 3,
                 "title": "Bài kiểm tra 45P",
                 "score": 10,
-                "time": "2021-07-03T00:00:00Z"
+                "time": "2021-07-03T00:00:00Z",
+                "status": "active"
             }
         ]
     },
@@ -47,21 +50,24 @@
                 "testId": 1,
                 "title": "Bài kiểm tra 15P",
                 "score": 10,
-                "time": "2021-07-01T00:00:00Z"
+                "time": "2021-07-01T00:00:00Z",
+                "status": "active"
             },
             {
                 "id": 2,
                 "testId": 2,
                 "title": "Bài kiểm tra 30P",
                 "score": 9,
-                "time": "2021-07-02T00:00:00Z"
+                "time": "2021-07-02T00:00:00Z",
+                "status": "active"
             },
             {
                 "id": 3,
                 "testId": 3,
                 "title": "Bài kiểm tra 45P",
                 "score": 10,
-                "time": "2021-07-03T00:00:00Z"
+                "time": "2021-07-03T00:00:00Z",
+                "status": "active"
             }
         ]
     },
@@ -80,21 +86,24 @@
                 "testId": 1,
                 "title": "Bài kiểm tra 15P",
                 "score": 10,
-                "time": "2021-07-01T00:00:00Z"
+                "time": "2021-07-01T00:00:00Z",
+                "status": "active"
             },
             {
                 "id": 2,
                 "testId": 2,
                 "title": "Bài kiểm tra 30P",
                 "score": 10,
-                "time": "2021-07-02T00:00:00Z"
+                "time": "2021-07-02T00:00:00Z",
+                "status": "active"
             },
             {
                 "id": 3,
                 "testId": 3,
                 "title": "Bài kiểm tra 45P",
                 "score": 10,
-                "time": "2021-07-03T00:00:00Z"
+                "time": "2021-07-03T00:00:00Z",
+                "status": "active"
             }
         ]
     }
