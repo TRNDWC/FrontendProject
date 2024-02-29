@@ -14,28 +14,28 @@
             <img src="../../images/img_bg.png" alt="logo" class="w-1/12">
         </div>
 
-        <div class="flex justify-center">
-            <div class="flex-col w-1/3 border-2 rounded-xl px-2 py-2 mx-5">
+        <div class="flex justify-center mt-12">
+            <div class="flex-col w-1/3 rounded-xl px-2 py-2 mx-5">
                 <!-- score correct wrong  -->
                 <div class="flex justify-center">
-                    <div class="flex-col w-1/2 border-2 rounded-xl px-2 py-2 mx-5">
+                    <div class="flex-col w-1/2 rounded-xl px-2 py-2 mx-5">
                         <div class="flex justify-center">
-                            <p class="text-2xl">
+                            <p class="text-4xl">
                                 Điểm
                             </p>
                         </div>
                         <div class="flex justify-center">
-                            <p class="text-2xl">
-                                10
+                            <p class="text-4xl " id="score">
+
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="flex justify-center my-5">
-                    <div class="flex-col w-1/2 border-2 rounded-xl px-2 py-2 mx-5">
+                    <div class="flex-col w-1/2 border-2 rounded-xl px-2 py-2 mx-5 border-green-500">
                         <div class="flex justify-center">
-                            <p class="text-2xl">
+                            <p class="text-2xl" id="correct">
                                 10
                             </p>
                         </div>
@@ -45,9 +45,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex-col w-1/2 border-2 rounded-xl px-2 py-2 mx-5">
+                    <div class="flex-col w-1/2 border-2 rounded-xl px-2 py-2 mx-5 border-red-500">
                         <div class="flex justify-center">
-                            <p class="text-2xl">
+                            <p class="text-2xl" id="wrong">
                                 10
                             </p>
                         </div>
@@ -57,9 +57,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex-col w-1/2 border-2 rounded-xl px-2 py-2 mx-5">
+                    <div class="flex-col w-1/2 border-2 rounded-xl px-2 py-2 mx-5 border-yellow-500">
                         <div class="flex justify-center">
-                            <p class="text-2xl">
+                            <p class="text-2xl" id="none">
                                 10
                             </p>
                         </div>
@@ -70,10 +70,23 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="flex justify-center">
+                    <a href="../../pages/test_form/test.html" class="text-white font-bold py-2 px-4 rounded"
+                        style="background-color: #B82441;">
+                        Trở về trang chủ
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex w-full justify-center absolute mt-3">
+            <div class="flex-col w-1/2 rounded-xl">
+                <div class="flex flex-wrap justify-center" id="detail">
+                </div>
             </div>
         </div>
     </div>
 </body>
-<script src="../../pages/test_form/scripts/test.js"></script>
+<script src="../../pages/test_form/scripts/result.js"></script>
 
 </html>

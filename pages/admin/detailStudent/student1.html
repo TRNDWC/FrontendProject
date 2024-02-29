@@ -56,7 +56,7 @@
                     id="name"
                     type="text"
                     name="name"
-                    value="Lê Tiến Đạt"
+                    value=""
                     readonly="readonly"
                 />
                 <div>
@@ -65,8 +65,8 @@
                         class="form-control"
                         id="email"
                         type="text"
-                        name="email"
-                        value="ltd123@gmail.com"
+                        email="email"
+                        value=""
                     >
                 </div>
                 <div>
@@ -75,8 +75,8 @@
                         class="form-control"
                         id="password"
                         type="text"
-                        name="phone"
-                        value="123456"
+                        password="password"
+                        value=""
                     >
             </div>
             <span
@@ -140,7 +140,7 @@
             <div class="card-body">
               <!-- table history submit of 1 student -->
 
-                <table class="table">
+                <table class="table" table-display>
                     <thead>
                     <tr>
                         <th scope="col">STT</th>
@@ -151,58 +151,12 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Bài thi 1</td>
-                        <td>20 phút</td>
-                        <td>10</td>
-                        <td>
-                        <a class="badge bg-success">Hoàn thành</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Bài thi 2</td>
-                        <td>20 phút</td>
-                        <td>9</td>
-                        <td>
-                        <a class="badge bg-success">Hoàn thành</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Bài thi 3</td>
-                        <td>20 phút</td>
-                        <td>8</td>
-                        <td>
-                        <a class="badge bg-success">Hoàn thành</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Bài thi 4</td>
-                        <td>20 phút</td>
-                        <td>7</td>
-                        <td>
-                        <a class="badge bg-success">Hoàn thành</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Bài thi 5</td>
-                        <td>20 phút</td>
-                        <td>5</td>
-                        <td>
-                        <a class="badge bg-danger">Chưa hoàn thành</a>
-                        </td>
-                    </tr>
+                    
                     </tbody>
             </div>
           </div>
         </div>
 
-        <div class="row"></div>
-        <script src="/admin/js/product.js"></script>
       </div>
     </div>
     <script
@@ -215,6 +169,7 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../../styles/css/styleLTD.css" />
+    <script type= "module" src="../../../pages/admin/script/detailStu.js"></script>
+    <link rel="stylesheet" href="../../../styles/css/styleLTD.css" />
   </body>
 </html>
