@@ -8,6 +8,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script type="module" src="../../../pages/admin/script/detailTest.js"></script>
     <link rel="stylesheet" href="../../../styles/css/styleLTD.css" />
   </head>
   <body>
@@ -56,9 +57,16 @@
                 id="name"
                 type="text"
                 name="name"
-                value="Bài kiểm tra giữa kì môn học hệ thống thông tin"
-                readonly="readonly"
+                value=""
               />
+              <label for="duration"><b> Thời gian </b></label>
+              <input
+                class="form-control"
+                id="duration"
+                type="text"
+                name="duration"
+                value=""
+              >
             </div>
             <span
               ><b>Trạng thái: </b
@@ -146,58 +154,18 @@
             <div class="card-header">Danh sách nộp bài</div>
             <div class="card-body">
               <!-- table history submit -->
-              <table class="table">
+              <table class="table" table-history>
                 <thead>
                   <tr>
                     <th scope="col">STT</th>
                     <th scope="col">Họ và tên</th>
-                    <th scope="col">Lớp</th>
                     <th scope="col">Điểm</th>
                     <th scope="col">Trạng thái</th>
                     <th scope="col">Thời gian làm bài</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Lê Tiến Đạt</td>
-                    <td>18TCLC_DT4</td>
-                    <td>10</td>
-                    <td>Hoàn thành</td>
-                    <td>20 phút</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Nguyễn Văn A</td>
-                    <td>18TCLC_DT4</td>
-                    <td>9</td>
-                    <td>Hoàn thành</td>
-                    <td>20 phút</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Nguyễn Văn B</td>
-                    <td>18TCLC_DT4</td>
-                    <td>8</td>
-                    <td>Hoàn thành</td>
-                    <td>20 phút</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Nguyễn Văn C</td>
-                    <td>18TCLC_DT4</td>
-                    <td>7</td>
-                    <td>Hoàn thành</td>
-                    <td>20 phút</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>Nguyễn Văn D</td>
-                    <td>18TCLC_DT4</td>
-                    <td>6</td>
-                    <td>Hoàn thành</td>
-                    <td>20 phút</td>
-                  </tr>
+                  
                 </tbody>
               </table>
             </div>
@@ -208,29 +176,21 @@
           <div class="col-6">
             <div class="card mb-4">
               <div class="card-header">Tổng số bài thi</div>
-              <div class="card-body">
-                <p>Số lượt làm bài: <b> 5 </b></p>
-                <p>Số bài thi chưa hoàn thành: <b> 1</b></p>
-                <p>Số bài thi hoàn thành: <b> 4 </b></p>
-                <p>Tỷ lệ hoàn thành: 80%</p>
+              <div class="card-body" table-1="table-1">
+                
               </div>
             </div>
           </div>
           <div class="col-6">
             <div class="card mb-4">
               <div class="card-header">Tổng kết điểm thi</div>
-              <div class="card-body">
-                <p>Điểm cao nhất : <b> 10 </b></p>
-                <p>Điểm thấp nhất: <b> 5</b></p>
-                <p>Điểm trung bình: <b> 8.5 </b></p>
-                <p>Khoảng điểm phổ biến: 7-9</p>
+              <div class="card-body" table-2="table-2">
               </div>
             </div>
           </div>
         </div>
 
         <div class="row"></div>
-        <script src="/admin/js/product.js"></script>
       </div>
     </div>
     <script
@@ -243,6 +203,7 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../../styles/css/styleLTD.css" />
+    <script type="module" src="../../../pages/admin/script/detailTest.js"></script>
+    <link rel="stylesheet" href="../../../styles/css/styleLTD.css" />
   </body>
 </html>
