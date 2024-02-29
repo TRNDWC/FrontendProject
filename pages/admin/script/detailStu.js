@@ -20,7 +20,15 @@ if(table){
         // convert time to date and time
         const date = new Date(course.time);
         course.time = date.toLocaleDateString() + " " + date.toLocaleTimeString();
-        
+        //status
+        if(course.status == "active"){
+            course.status = `
+                <a class="badge bg-success" href="javascript:;" data-status="${course.status}" data-id="" button-change-status="button-change-status">Đang hoạt động`;
+        }
+        else{
+            course.status = `
+                <a class="badge bg-danger" href="javascript:;" data-status="${course.status}" data-id="" button-change-status="button-change-status">Đã kết thúc`;
+        }
         row.innerHTML = `
             <td>${index+1}</td>
             <td>${course.title}</td>
