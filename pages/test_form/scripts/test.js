@@ -22,7 +22,6 @@ function setUpAnswers() {
             question.setUserAnswer(userAnswer.value);
         }
     });
-    console.log('questions', questions);
 }
 
 var questions = [
@@ -44,9 +43,12 @@ var questions = [
     new Question(16, 'What is the capital of France?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Paris'),
     new Question(17, 'What is the capital of Germany?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Berlin'),
     new Question(18, 'What is the capital of Spain?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Madrid'),
-    new Question(19, 'What is the capital of England?', ['Paris', 'London', 'Berlin', 'Madrid'], 'London')];
+    new Question(19, 'What is the capital of England?', ['Paris', 'London', 'Berlin', 'Madrid'], 'London'),
+    new Question(20, 'What is the capital of Italy?', ['Paris', 'London', 'Rome', 'Madrid'], 'Rome')];
 
 let currentQuestion = 0;
+let correct = 0;
+let wrong = 0;
 timeCountDown();
 setUpQuestions();
 setUpMenu();
@@ -59,12 +61,6 @@ function setUpMenu(){
 }
 
 function setUpQuestions() {
-
-    console.log('questions', questions);
-    questions.forEach((question, index) => {
-        console.log('question'+index, question.isCorrect, question.userAnswer, question.correctAnswer);
-    });
-
     let testArea = document.getElementById('test-area');
     let start = currentQuestion / 5;
     start = Math.floor(start) * 5;
@@ -84,11 +80,11 @@ function getquestionHtml(question, index) {
     let checked3 = question.userAnswer?.split(' ')[0] === question.answers[2] ? 'checked' : '';
     let checked4 = question.userAnswer?.split(' ')[0] === question.answers[3] ? 'checked' : '';
 
-    return `<div class="flex flex-wrap border-2 rounded-xl px-2 py-2 my-5">
+    return `<div class="flex-wrap border-2 rounded-xl px-2 py-2 my-5" id="question${index + 1}">
     <!-- question form with radio button -->
     <div class="test-form p-2" onchange="onAnswerClick(${index})">
         <div class="question">
-            <p id="question">${index + 1}. ${question.question}</p>
+            <p>${index + 1}. ${question.question}</p>
         </div>
         <div class="options" style="accent-color: #B82441;">
             <div class="option">
@@ -121,13 +117,11 @@ function getMenuItemHtml(index) {
 }
 
 function buttonClick(index) {
-    console.log('buttonClick');
     currentQuestion = index;
-    console.log('currentQuestion', currentQuestion);
     setUpQuestions();
     for (let i = 0; i < questions.length; i++) {
         let button = document.getElementById(`button${i}`);
-        if (i === index) {
+        if (i === index || questions[i].userAnswer !== null) {
             button.style.backgroundColor = '#B82441';
             button.style.color = 'white';
             button.style.borderColor = '#B82441';
@@ -137,6 +131,11 @@ function buttonClick(index) {
             button.style.borderColor = '#B82441';
         }
     }
+    let id = 'question' + (index+1);
+    let question = document.getElementById(id);
+    question.style.outline = '2px solid #B82441';
+    let topPos = question.offsetTop;
+    document.scrollingElement.scrollTop = topPos - 150;
 }
 
 
@@ -149,10 +148,12 @@ function timeCountDown() {
         timeItem.innerHTML = getTimeFormat(time);
         if (time === 0) {
             clearInterval(interval);
+            onSubmitClick();
             alert('Time is up!');
         }
     }
         , 1000);
+    
 }
 
 function getTimeFormat(time) {
@@ -176,13 +177,27 @@ function getTimeFormat(time) {
 function onAnswerClick(index) {
     let userAnswer = document.querySelector(`input[name="question${index + 1}"]:checked`);
     questions[index].setUserAnswer(userAnswer.value);
+    buttonClick(index);
 }
 
-function onPrevClick() {
-    let score = 0;
+
+
+function onSubmitClick() {
+    console.log('onSubmitClick');
+    correct = 0;
+    wrong = 0;
+    none = 0;
     questions.forEach((question, index) => {
-        if (question.isCorrect) {
-            score++;
+        if (question.userAnswer!==null) {
+            if (question.isCorrect) {
+                correct++;
+            } else {
+                wrong++;
+            }
+        } else {
+            none++;
         }
     });
+    // them parameter vao url
+    window.location.href = 'result.html?correct=' + correct + '&wrong=' + wrong + '&none=' + none;
 }

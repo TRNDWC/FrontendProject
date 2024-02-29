@@ -10,53 +10,33 @@
 </head>
 
 <body>
-    <div>
-        <div class="flex mb-5 relative" style="background-color: #B82441;">
+    <div class="flex h-screen flex-col">
+        <div class="flex mb-5 sticky top-0" style="background-color: #B82441;">
             <img src="../../images/img_bg.png" alt="logo" class="w-1/12">
             <div class="flex justify-center items-center absolute w-full h-full">
                 <p id="time" class="text-3xl text-white">00:00</p>
             </div>
-            <div class="flex justify-end items-center w-11/12 mr-10">
-                <button class="bg-white text-red-500 px-3 py-1 rounded-md font-bold">Nộp bài</button>
+            <div class="flex justify-end items-center absolute w-full h-full">
+                <button class="bg-white text-red-500 px-3 py-1 rounded-md font-bold mr-5" onclick="onSubmitClick()">Nộp
+                    bài</button>
             </div>
         </div>
 
-        <div class="flex">
-            <div class="flex-col w-1/5 border-2 rounded-xl px-2 py-2 mx-5">
+
+        <div class="flex flex-1">
+
+            <div class="flex-col w-1/5 border-2 rounded-xl px-2 py-2 mx-5 my-5 fixed" id="menu-cover">
                 <div class="flex flex-wrap justify-center" id="menu-area">
                 </div>
             </div>
 
-            <div class="flex-col flex-wrap w-4/5 mx-5" id="test-area">
-                <div class="flex flex-wrap border-2 rounded-xl px-2 py-2 my-5">
-                    <!-- question form with radio button -->
-                    <div class="test-form p-2">
-                        <div class="question">
-                            <p id="question">${index + 1}. ${question.question}</p>
-                        </div>
-                        <div class="options" style="accent-color: #B82441;">
-                            <div class="option">
-                                <input type="radio" name="question${index + 1}" id="option${index*5}" value="option1">
-                                <label for="option${index*5}">${question.answers[0]}</label>
-                            </div>
-                            <div class="option">
-                                <input type="radio" name="question${index + 1}" id="option${index*5+1}" value="option2">
-                                <label for="option${index*5+1}">${question.answers[1]}</label>
-                            </div>
-                            <div class="option">
-                                <input type="radio" name="question${index + 1}" id="option${index*5+2}" value="option3">
-                                <label for="option${index*5+2}">${question.answers[2]}</label>
-                            </div>
-                            <div class="option">
-                                <input type="radio" name="question${index + 1}" id="option${index*5+3}" value="option4">
-                                <label for="option${index*5+3}">${question.answers[3]}</label>
-                            </div>
-                        </div>
-                    </div>
+            <div class="flex justify-end w-full">
+                <div class="flex-col w-3/4 rounded-xl px-2 mx-5" id="test-area">
                 </div>
             </div>
         </div>
     </div>
 </body>
 <script src="../../pages/test_form/scripts/test.js"></script>
+
 </html>
