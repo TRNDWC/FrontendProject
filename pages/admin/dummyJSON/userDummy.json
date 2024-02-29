@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "name": "Lê Tiến Đạt",
+        "email": "ltd@gmail.com",
+        "avatar": "https://res.cloudinary.com/dodip3vc2/image/upload/v1709131134/user_ava_x6ezhh.jpg",
+        "password": "123456",
+        "status": "active",
+        "deleted": false,
+        "testHistory":
+        [
+            {
+                "id": 1,
+                "testId": 1,
+                "title": "Bài kiểm tra 15P",
+                "score": 10,
+                "time": "2021-07-01T00:00:00Z"
+            },
+            {
+                "id": 2,
+                "testId": 2,
+                "title": "Bài kiểm tra 30P",
+                "score": 10,
+                "time": "2021-07-02T00:00:00Z"
+            },
+            {
+                "id": 3,
+                "testId": 3,
+                "title": "Bài kiểm tra 45P",
+                "score": 10,
+                "time": "2021-07-03T00:00:00Z"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Nguyễn Văn A",
+        "email": "nva@gmail.com",
+        "avatar": "https://res.cloudinary.com/dodip3vc2/image/upload/v1709131134/user_ava_x6ezhh.jpg",
+        "status": "active",
+        "password": "123456",
+        "deleted": false,
+        "testHistory":
+        [
+            {
+                "id": 1,
+                "testId": 1,
+                "title": "Bài kiểm tra 15P",
+                "score": 10,
+                "time": "2021-07-01T00:00:00Z"
+            },
+            {
+                "id": 2,
+                "testId": 2,
+                "title": "Bài kiểm tra 30P",
+                "score": 9,
+                "time": "2021-07-02T00:00:00Z"
+            },
+            {
+                "id": 3,
+                "testId": 3,
+                "title": "Bài kiểm tra 45P",
+                "score": 10,
+                "time": "2021-07-03T00:00:00Z"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Trần Văn B",
+        "email": "tvb@gmail.com",
+        "password": "123456",
+        "avatar": "https://res.cloudinary.com/dodip3vc2/image/upload/v1709131134/user_ava_x6ezhh.jpg",
+        "status": "active",
+        "deleted": false,
+        "testHistory":
+        [
+            {
+                "id": 1,
+                "testId": 1,
+                "title": "Bài kiểm tra 15P",
+                "score": 10,
+                "time": "2021-07-01T00:00:00Z"
+            },
+            {
+                "id": 2,
+                "testId": 2,
+                "title": "Bài kiểm tra 30P",
+                "score": 10,
+                "time": "2021-07-02T00:00:00Z"
+            },
+            {
+                "id": 3,
+                "testId": 3,
+                "title": "Bài kiểm tra 45P",
+                "score": 10,
+                "time": "2021-07-03T00:00:00Z"
+            }
+        ]
+    }
+]
