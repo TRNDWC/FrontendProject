@@ -79,14 +79,8 @@
           <path
             d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
         </svg>
-        <input type="text" class="form-control rounded" id="input_from" placeholder="Ngày bắt đầu" name="start_date">
+        <input type="text" class="form-control rounded" id="input_from" placeholder="Ngày bắt đầu">
       </div>
-      <!-- Arrow -->
-      <!-- <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-          </svg>
-        </div> -->
       <div class="flex items-center justify-end ml-5">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
           class="pointer-events-none absolute bi bi-calendar-minus mr-3" viewBox="0 0 16 16">
@@ -94,7 +88,7 @@
           <path
             d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
         </svg>
-        <input type="text" class="form-control rounded" id="input_to" placeholder="Ngày kết thúc" name="end_date">
+        <input type="text" class="form-control rounded" id="input_to" placeholder="Ngày kết thúc">
       </div>
 
       <!-- For Name search -->
@@ -108,7 +102,8 @@
       </div>
     </div>
     <!-- For Filter Button -->
-    <button type="button" class="bg-red-500 text-white py-2 rounded ml-4 mt-4 flex justify-evenly" style="width: 80px">
+    <button type="button" class="bg-red-500 text-white py-2 rounded ml-4 mt-4 flex justify-evenly" style="width: 80px"
+      onclick="searchByDate()">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel mt-1"
         viewBox="0 0 16 16">
         <path
@@ -178,6 +173,8 @@
 </body>
 <script src="./component/calendar/main.js"></script>
 <script src="./component/calendar/rome.js"></script>
+
+<!-- JS for Filtering -->
 <script src="./scripts/home.js"></script>
 
 </html>
