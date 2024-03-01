@@ -106,5 +106,41 @@
                 "status": "active"
             }
         ]
+    },
+    {
+        "id": 4,
+        "name": "Lê Văn C",
+        "email": "lvc@gmail.com",
+        "password": "123456",
+        "avatar": "https://res.cloudinary.com/dodip3vc2/image/upload/v1709131134/user_ava_x6ezhh.jpg",
+        "status": "active",
+        "deleted": false,
+        "testHistory":
+        [
+            {
+                "id": 1,
+                "testId": 1,
+                "title": "Bài kiểm tra 15P",
+                "score": 8,
+                "time": "2021-07-01T00:00:00Z",
+                "status": "active"
+            },
+            {
+                "id": 2,
+                "testId": 2,
+                "title": "Bài kiểm tra 30P",
+                "score": 7,
+                "time": "2021-07-02T00:00:00Z",
+                "status": "active"
+            },
+            {
+                "id": 3,
+                "testId": 3,
+                "title": "Bài kiểm tra 45P",
+                "score": 6,
+                "time": "2021-07-03T00:00:00Z",
+                "status": "active"
+            }
+        ]
     }
 ]

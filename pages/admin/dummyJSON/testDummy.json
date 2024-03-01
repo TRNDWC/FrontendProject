@@ -106,7 +106,7 @@
                 "score": 9,
                 "createdAt": "2021-07-01T00:00:00.000Z",
                 "updatedAt": "2021-07-01T00:00:00.000Z",
-                "status":"finished",
+                "status":"unfinished",
                 "timeFinish":10
             },
             {
@@ -118,6 +118,16 @@
                 "updatedAt": "2021-07-01T00:00:00.000Z",
                 "status":"finished",
                 "timeFinish":12
+            },
+            {
+                "id": 4,
+                "testId": 1,
+                "userId": 4,
+                "score": 8,
+                "createdAt": "2021-07-01T00:00:00.000Z",
+                "updatedAt": "2021-07-01T00:00:00.000Z",
+                "status":"unfinished",
+                "timeFinish":15
             }
         ]
     },
@@ -238,8 +248,18 @@
                 "score": 9,
                 "createdAt": "2021-07-01T00:00:00.000Z",
                 "updatedAt": "2021-07-01T00:00:00.000Z",
-                "status":"finished",
+                "status":"unfinished",
                 "timeFinish":29
+            },
+            {
+                "id": 4,
+                "testId": 1,
+                "userId": 4,
+                "score": 7,
+                "createdAt": "2021-07-01T00:00:00.000Z",
+                "updatedAt": "2021-07-01T00:00:00.000Z",
+                "status":"finished",
+                "timeFinish": 29
             }
         ]
     },
@@ -339,7 +359,7 @@
                 "score": 8,
                 "createdAt": "2021-07-01T00:00:00.000Z",
                 "updatedAt": "2021-07-01T00:00:00.000Z",
-                "status":"finished",
+                "status":"unfinished",
                 "timeFinish":45
             },
             {
@@ -361,6 +381,16 @@
                 "updatedAt": "2021-07-01T00:00:00.000Z",
                 "status":"finished",
                 "timeFinish":42
+            },
+            {
+                "id": 4,
+                "testId": 1,
+                "userId": 4,
+                "score": 6,
+                "createdAt": "2021-07-01T00:00:00.000Z",
+                "updatedAt": "2021-07-01T00:00:00.000Z",
+                "status":"unfinished",
+                "timeFinish": 45
             }
         ]
     }
