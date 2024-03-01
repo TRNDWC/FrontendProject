@@ -1,4 +1,5 @@
 import data from '../dummyJSON/testDummy.json' assert { type: 'json' };
+
 import data2 from '../dummyJSON/userDummy.json' assert { type: 'json' };
 const listUser = data2;
 const listTest = data;
@@ -14,6 +15,7 @@ timeInput.value = test.time;
 //fill tableHistory with results
 const tableHistory = document.querySelector('[table-history]');
 test.result.forEach((result,index) => {
+  
     const row = tableHistory.insertRow(index+1);
     const user = listUser.find(user => user.id == result.userId);
     user.score = result.score;
@@ -21,7 +23,7 @@ test.result.forEach((result,index) => {
         result.statusHTML = `
             <a class="badge bg-success" href="javascript:;" data-status="${result.status}" data-id="" button-change-status="button-change-status">Đã hoàn thành`;
     }
-    else{
+    else if(result.status == "unfinished"){
         result.statusHTML = `
             <a class="badge bg-danger" href="javascript:;" data-status="${result.status}" data-id="" button-change-status="button-change-status">Chưa hoàn thành`;
     }
@@ -79,4 +81,80 @@ table2.innerHTML = `
     </tr>
     `;
 
+// chart
+var ctx = document.getElementById("myChart1").getContext("2d");
+      // get data from listTest to chart
+      let dataChart = [];
+
+      var myChart = new Chart(ctx, {
+        type: "doughnut",
+        data: {
+          labels: ["Đã hoàn thành", "Chưa hoàn thành"],
+          datasets: [
+            {
+              label: "",
+              data: [totalFinishedTest, totalUnfinishedTest],
+              backgroundColor: [
+                "rgba(75, 192, 192, 0.2)",
+                "rgba(255, 206, 86, 0.2)", 
+              ],
+              borderColor: [
+                
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+              ],
+              borderWidth: 1,
+            },
+          ], 
+        },
+        options: {
+        },
+      });
+      
+      //chart 2 
+      // get all distinct score and count
+      let distinctScore = [];
+      let countScore = [];
+      test1.result.forEach(res => {
+        if(distinctScore.includes(res.score) == false){
+            distinctScore.push(res.score);
+            countScore.push(1);
+        }
+        else{
+            let index = distinctScore.indexOf(res.score);
+            countScore[index]++;
+        }
+      });
+      var ctx = document.getElementById("myChart2").getContext("2d");
+      var myChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: distinctScore,
+          datasets: [
+            {
+              label: "Số lượng",
+              data: countScore,
+              backgroundColor: [
+              
+                "rgba(75, 192, 192, 0.2)",
+                
+                
+              ],
+              borderColor: [
+                
+                "rgba(75, 192, 192, 1)",
+                
+              ],
+              borderWidth: 1,
+            },
+          ], 
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
 
