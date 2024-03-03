@@ -15,7 +15,25 @@
                 "title": "Bài kiểm tra 15P",
                 "score": 10,
                 "time": "2021-07-01T00:00:00Z",
-                "status": "active"
+                "status": "active",
+                "listAnswer":
+                [
+                    {
+                        "id": 1,
+                        "questionId": 1,
+                        "answerId": 1
+                    },
+                    {
+                        "id": 2,
+                        "questionId": 2,
+                        "answerId": 6
+                    },
+                    {
+                        "id": 3,
+                        "questionId": 3,
+                        "answerId": 11
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -23,7 +41,25 @@
                 "title": "Bài kiểm tra 30P",
                 "score": 10,
                 "time": "2021-07-02T00:00:00Z",
-                "status": "active"
+                "status": "active",
+                "listAnswer":
+                [
+                    {
+                        "id": 1,
+                        "questionId": 4,
+                        "answerId": 13
+                    },
+                    {
+                        "id": 2,
+                        "questionId": 5,
+                        "answerId": 18
+                    },
+                    {
+                        "id": 3,
+                        "questionId": 6,
+                        "answerId": 23
+                    }
+                ]
             },
             {
                 "id": 3,
@@ -31,7 +67,25 @@
                 "title": "Bài kiểm tra 45P",
                 "score": 10,
                 "time": "2021-07-03T00:00:00Z",
-                "status": "active"
+                "status": "active",
+                "listAnswer":
+                [
+                    {
+                        "id": 1,
+                        "questionId": 7,
+                        "answerId": 25
+                    },
+                    {
+                        "id": 2,
+                        "questionId": 8,
+                        "answerId": 30
+                    },
+                    {
+                        "id": 3,
+                        "questionId": 9,
+                        "answerId": 35
+                    }
+                ]
             }
         ]
     },
@@ -51,7 +105,25 @@
                 "title": "Bài kiểm tra 15P",
                 "score": 10,
                 "time": "2021-07-01T00:00:00Z",
-                "status": "active"
+                "status": "active",
+                "listAnswer":
+                [
+                    {
+                        "id": 1,
+                        "questionId": 1,
+                        "answerId": 1
+                    },
+                    {
+                        "id": 2,
+                        "questionId": 2,
+                        "answerId": 6
+                    },
+                    {
+                        "id": 3,
+                        "questionId": 3,
+                        "answerId": 11
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -59,7 +131,25 @@
                 "title": "Bài kiểm tra 30P",
                 "score": 9,
                 "time": "2021-07-02T00:00:00Z",
-                "status": "active"
+                "status": "active",
+                "listAnswer":
+                [
+                    {
+                        "id": 1,
+                        "questionId": 4,
+                        "answerId": 1
+                    },
+                    {
+                        "id": 2,
+                        "questionId": 5,
+                        "answerId": 6
+                    },
+                    {
+                        "id": 3,
+                        "questionId": 6,
+                        "answerId": 11
+                    }
+                ]
             },
             {
                 "id": 3,
@@ -67,7 +157,25 @@
                 "title": "Bài kiểm tra 45P",
                 "score": 10,
                 "time": "2021-07-03T00:00:00Z",
-                "status": "active"
+                "status": "active",
+                "listAnswer":
+                [
+                    {
+                        "id": 1,
+                        "questionId": 7,
+                        "answerId": 1
+                    },
+                    {
+                        "id": 2,
+                        "questionId": 8,
+                        "answerId": 6
+                    },
+                    {
+                        "id": 3,
+                        "questionId": 9,
+                        "answerId": 11
+                    }
+                ]
             }
         ]
     },
@@ -87,7 +195,25 @@
                 "title": "Bài kiểm tra 15P",
                 "score": 10,
                 "time": "2021-07-01T00:00:00Z",
-                "status": "active"
+                "status": "active",
+                "listAnswer":
+                [
+                    {
+                        "id": 1,
+                        "questionId": 1,
+                        "answerId": 1
+                    },
+                    {
+                        "id": 2,
+                        "questionId": 2,
+                        "answerId": 6
+                    },
+                    {
+                        "id": 3,
+                        "questionId": 3,
+                        "answerId": 11
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -95,7 +221,25 @@
                 "title": "Bài kiểm tra 30P",
                 "score": 10,
                 "time": "2021-07-02T00:00:00Z",
-                "status": "active"
+                "status": "active",
+                "listAnswer":
+                [
+                    {
+                        "id": 1,
+                        "questionId": 1,
+                        "answerId": 1
+                    },
+                    {
+                        "id": 2,
+                        "questionId": 2,
+                        "answerId": 6
+                    },
+                    {
+                        "id": 3,
+                        "questionId": 3,
+                        "answerId": 11
+                    }
+                ]
             },
             {
                 "id": 3,
@@ -103,7 +247,25 @@
                 "title": "Bài kiểm tra 45P",
                 "score": 10,
                 "time": "2021-07-03T00:00:00Z",
-                "status": "active"
+                "status": "active",
+                "listAnswer":
+                [
+                    {
+                        "id": 1,
+                        "questionId": 1,
+                        "answerId": 1
+                    },
+                    {
+                        "id": 2,
+                        "questionId": 2,
+                        "answerId": 6
+                    },
+                    {
+                        "id": 3,
+                        "questionId": 3,
+                        "answerId": 11
+                    }
+                ]
             }
         ]
     },
@@ -123,7 +285,25 @@
                 "title": "Bài kiểm tra 15P",
                 "score": 8,
                 "time": "2021-07-01T00:00:00Z",
-                "status": "active"
+                "status": "active",
+                "listAnswer":
+                [
+                    {
+                        "id": 1,
+                        "questionId": 1,
+                        "answerId": 1
+                    },
+                    {
+                        "id": 2,
+                        "questionId": 2,
+                        "answerId": 6
+                    },
+                    {
+                        "id": 3,
+                        "questionId": 3,
+                        "answerId": 11
+                    }
+                ]
             },
             {
                 "id": 2,
@@ -131,7 +311,25 @@
                 "title": "Bài kiểm tra 30P",
                 "score": 7,
                 "time": "2021-07-02T00:00:00Z",
-                "status": "active"
+                "status": "active",
+                "listAnswer":
+                [
+                    {
+                        "id": 1,
+                        "questionId": 1,
+                        "answerId": 1
+                    },
+                    {
+                        "id": 2,
+                        "questionId": 2,
+                        "answerId": 6
+                    },
+                    {
+                        "id": 3,
+                        "questionId": 3,
+                        "answerId": 11
+                    }
+                ]
             },
             {
                 "id": 3,
@@ -139,7 +337,25 @@
                 "title": "Bài kiểm tra 45P",
                 "score": 6,
                 "time": "2021-07-03T00:00:00Z",
-                "status": "active"
+                "status": "active",
+                "listAnswer":
+                [
+                    {
+                        "id": 1,
+                        "questionId": 1,
+                        "answerId": 1
+                    },
+                    {
+                        "id": 2,
+                        "questionId": 2,
+                        "answerId": 6
+                    },
+                    {
+                        "id": 3,
+                        "questionId": 3,
+                        "answerId": 11
+                    }
+                ]
             }
         ]
     }

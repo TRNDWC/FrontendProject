@@ -8,78 +8,78 @@
         "questions": [
             {
                 "id": 1,
-                "title": "Câu 1",
+                "title": "Câu 1: CSS là viết tắt của từ gì?",
                 "answers": [
                     {
                         "id": 1,
-                        "title": "Đáp án 1",
+                        "title": "Cascading Style Sheets",
                         "isCorrect": true
                     },
                     {
                         "id": 2,
-                        "title": "Đáp án 2",
+                        "title": "Cascading Style Script",
                         "isCorrect": false
                     },
                     {
                         "id": 3,
-                        "title": "Đáp án 3",
+                        "title": "Cascading Style Sheet",
                         "isCorrect": false
                     },
                     {
                         "id": 4,
-                        "title": "Đáp án 4",
+                        "title": "Cascading Style Scripting",
                         "isCorrect": false
                     }
                 ]
             },
             {
                 "id": 2,
-                "title": "Câu 2",
+                "title": "Câu 2 : HTML là viết tắt của từ gì?",
                 "answers": [
                     {
                         "id": 5,
-                        "title": "Đáp án 1",
+                        "title": "  Hyper Texture Markup Language",
                         "isCorrect": false
                     },
                     {
                         "id": 6,
-                        "title": "Đáp án 2",
+                        "title": "  Hyper Text Markup Language",
                         "isCorrect": true
                     },
                     {
                         "id": 7,
-                        "title": "Đáp án 3",
+                        "title": "  High Text Markup Language",
                         "isCorrect": false
                     },
                     {
                         "id": 8,
-                        "title": "Đáp án 4",
+                        "title": "  Hyper Text Mask Language",
                         "isCorrect": false
                     }
                 ]
             },
             {
                 "id": 3,
-                "title": "Câu 3",
+                "title": "Câu 3: js là viết tắt của từ gì?",
                 "answers": [
                     {
                         "id": 9,
-                        "title": "Đáp án 1",
+                        "title": "  Javan Scripted",
                         "isCorrect": false
                     },
                     {
                         "id": 10,
-                        "title": "Đáp án 2",
+                        "title": "  JavScoped",
                         "isCorrect": false
                     },
                     {
                         "id": 11,
-                        "title": "Đáp án 3",
+                        "title": "  Java Script",
                         "isCorrect": true
                     },
                     {
                         "id": 12,
-                        "title": "Đáp án 4",
+                        "title": "không có đáp án nào đúng",
                         "isCorrect": false
                     }
                 ]
@@ -135,82 +135,83 @@
         "id": 2,
         "testId": 2,
         "title": "Bài kiểm tra 30P",
-        "time": 30,
+        "time": 15,
+        
         "questions": [
             {
                 "id": 4,
-                "title": "Câu 1",
+                "title": "Câu 1: CSS là viết tắt của từ gì?",
                 "answers": [
                     {
-                        "id": 13,
-                        "title": "Đáp án 1",
+                        "id": 1,
+                        "title": "Cascading Style Sheets",
                         "isCorrect": true
                     },
                     {
-                        "id": 14,
-                        "title": "Đáp án 2",
+                        "id": 2,
+                        "title": "Cascading Style Script",
                         "isCorrect": false
                     },
                     {
-                        "id": 15,
-                        "title": "Đáp án 3",
+                        "id": 3,
+                        "title": "Cascading Style Sheet",
                         "isCorrect": false
                     },
                     {
-                        "id": 16,
-                        "title": "Đáp án 4",
+                        "id": 4,
+                        "title": "Cascading Style Scripting",
                         "isCorrect": false
                     }
                 ]
             },
             {
                 "id": 5,
-                "title": "Câu 2",
+                "title": "Câu 2 : HTML là viết tắt của từ gì?",
                 "answers": [
                     {
-                        "id": 17,
-                        "title": "Đáp án 1",
+                        "id": 5,
+                        "title": "  Hyper Texture Markup Language",
                         "isCorrect": false
                     },
                     {
-                        "id": 18,
-                        "title": "Đáp án 2",
+                        "id": 6,
+                        "title": "  Hyper Text Markup Language",
                         "isCorrect": true
                     },
                     {
-                        "id": 19,
-                        "title": "Đáp án 3",
+                        "id": 7,
+                        "title": "  High Text Markup Language",
                         "isCorrect": false
                     },
                     {
-                        "id": 20,
-                        "title": "Đáp án 4",
+                        "id": 8,
+                        "title": "  Hyper Text Mask Language",
                         "isCorrect": false
                     }
                 ]
             },
             {
                 "id": 6,
-                "title": "Câu 3",
+                "title": "Câu 3: js là viết tắt của từ gì?",
                 "answers": [
                     {
-                        "id": 21,
-                        "title": "Đáp án 1",
+                        "id": 9,
+                        "title": "  Javan Scripted",
                         "isCorrect": false
                     },
                     {
-                        "id": 22,
-                        "title": "Đáp án 2",
+                        "id": 10,
+                        "title": "  JavScoped",
                         "isCorrect": false
                     },
                     {
-                        "id": 23,
-                        "title": "Đáp án 3",
+                        "id": 11,
+                        "title": "  Java Script",
                         "isCorrect": true
                     },
                     {
-                        "id": 24,
-                        "title": "Đáp án 4",
+                        "id": 12,
+                        "title": "không có đáp án nào đúng",
                         "isCorrect": false
                     }
                 ]
@@ -219,8 +220,7 @@
         "createdAt": "2021-07-01T00:00:00.000Z",
         "updatedAt": "2021-07-01T00:00:00.000Z",
         "status":"active",
-        "result": 
-        [
+        "result":[
             {
                 "id": 1,
                 "testId": 2,
@@ -229,36 +229,36 @@
                 "createdAt": "2021-07-01T00:00:00.000Z",
                 "updatedAt": "2021-07-01T00:00:00.000Z",
                 "status":"finished",
-                "timeFinish":28
+                "timeFinish":25
             },
             {
                 "id": 2,
                 "testId": 2,
                 "userId": 2,
-                "score": 8,
+                "score": 9,
                 "createdAt": "2021-07-01T00:00:00.000Z",
                 "updatedAt": "2021-07-01T00:00:00.000Z",
-                "status":"finished",
-                "timeFinish":30
+                "status":"unfinished",
+                "timeFinish":22
             },
             {
                 "id": 3,
                 "testId": 2,
                 "userId": 3,
-                "score": 9,
-                "createdAt": "2021-07-01T00:00:00.000Z",
-                "updatedAt": "2021-07-01T00:00:00.000Z",
-                "status":"unfinished",
-                "timeFinish":29
-            },
-            {
-                "id": 4,
-                "testId": 1,
-                "userId": 4,
-                "score": 7,
+                "score": 10,
                 "createdAt": "2021-07-01T00:00:00.000Z",
                 "updatedAt": "2021-07-01T00:00:00.000Z",
                 "status":"finished",
+                "timeFinish": 30
+            },
+            {
+                "id": 4,
+                "testId": 2,
+                "userId": 4,
+                "score": 8,
+                "createdAt": "2021-07-01T00:00:00.000Z",
+                "updatedAt": "2021-07-01T00:00:00.000Z",
+                "status":"unfinished",
                 "timeFinish": 29
             }
         ]
@@ -268,81 +268,82 @@
         "testId": 3,
         "title": "Bài kiểm tra 45P",
         "time": 45,
+        
         "questions": [
             {
                 "id": 7,
-                "title": "Câu 1",
+                "title": "Câu 1: CSS là viết tắt của từ gì?",
                 "answers": [
                     {
-                        "id": 25,
-                        "title": "Đáp án 1",
+                        "id": 1,
+                        "title": "Cascading Style Sheets",
                         "isCorrect": true
                     },
                     {
-                        "id": 26,
-                        "title": "Đáp án 2",
+                        "id": 2,
+                        "title": "Cascading Style Script",
                         "isCorrect": false
                     },
                     {
-                        "id": 27,
-                        "title": "Đáp án 3",
+                        "id": 3,
+                        "title": "Cascading Style Sheet",
                         "isCorrect": false
                     },
                     {
-                        "id": 28,
-                        "title": "Đáp án 4",
+                        "id": 4,
+                        "title": "Cascading Style Scripting",
                         "isCorrect": false
                     }
                 ]
             },
             {
                 "id": 8,
-                "title": "Câu 2",
+                "title": "Câu 2 : HTML là viết tắt của từ gì?",
                 "answers": [
                     {
-                        "id": 29,
-                        "title": "Đáp án 1",
+                        "id": 5,
+                        "title": "  Hyper Texture Markup Language",
                         "isCorrect": false
                     },
                     {
-                        "id": 30,
-                        "title": "Đáp án 2",
+                        "id": 6,
+                        "title": "  Hyper Text Markup Language",
                         "isCorrect": true
                     },
                     {
-                        "id": 31,
-                        "title": "Đáp án 3",
+                        "id": 7,
+                        "title": "  High Text Markup Language",
                         "isCorrect": false
                     },
                     {
-                        "id": 32,
-                        "title": "Đáp án 4",
+                        "id": 8,
+                        "title": "  Hyper Text Mask Language",
                         "isCorrect": false
                     }
                 ]
             },
             {
                 "id": 9,
-                "title": "Câu 3",
+                "title": "Câu 3: js là viết tắt của từ gì?",
                 "answers": [
                     {
-                        "id": 33,
-                        "title": "Đáp án 1",
+                        "id": 9,
+                        "title": "  Javan Scripted",
                         "isCorrect": false
                     },
                     {
-                        "id": 34,
-                        "title": "Đáp án 2",
+                        "id": 10,
+                        "title": "  JavScoped",
                         "isCorrect": false
                     },
                     {
-                        "id": 35,
-                        "title": "Đáp án 3",
+                        "id": 11,
+                        "title": "  Java Script",
                         "isCorrect": true
                     },
                     {
-                        "id": 36,
-                        "title": "Đáp án 4",
+                        "id": 12,
+                        "title": "không có đáp án nào đúng",
                         "isCorrect": false
                     }
                 ]
@@ -356,11 +357,11 @@
                 "id": 1,
                 "testId": 3,
                 "userId": 1,
-                "score": 8,
+                "score": 10,
                 "createdAt": "2021-07-01T00:00:00.000Z",
                 "updatedAt": "2021-07-01T00:00:00.000Z",
-                "status":"unfinished",
-                "timeFinish":45
+                "status":"finished",
+                "timeFinish": 39
             },
             {
                 "id": 2,
@@ -369,29 +370,30 @@
                 "score": 9,
                 "createdAt": "2021-07-01T00:00:00.000Z",
                 "updatedAt": "2021-07-01T00:00:00.000Z",
-                "status":"finished",
-                "timeFinish":40
+                "status":"unfinished",
+                "timeFinish":45
             },
             {
                 "id": 3,
                 "testId": 3,
                 "userId": 3,
-                "score": 8,
+                "score": 10,
                 "createdAt": "2021-07-01T00:00:00.000Z",
                 "updatedAt": "2021-07-01T00:00:00.000Z",
                 "status":"finished",
-                "timeFinish":42
+                "timeFinish": 41
             },
             {
                 "id": 4,
-                "testId": 1,
+                "testId": 3,
                 "userId": 4,
-                "score": 6,
+                "score": 8,
                 "createdAt": "2021-07-01T00:00:00.000Z",
                 "updatedAt": "2021-07-01T00:00:00.000Z",
                 "status":"unfinished",
-                "timeFinish": 45
+                "timeFinish": 40
             }
         ]
     }
+    
 ]
