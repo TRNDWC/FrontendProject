@@ -55,6 +55,68 @@ if(buttonDelete.length >0){
     });
 }
 
+
+
+//search
+const search = document.querySelector("[name='keyword']");
+const formSearch = document.querySelector("[btnsearch='btnsearch']");
+if(formSearch){
+    let url = new URL(window.location.href);
+    formSearch.addEventListener("submit",(event)=>{
+        event.preventDefault();
+        const keyword = event.target.elements.keyword.value;
+        if(keyword){
+            url.searchParams.set("keyword",keyword);
+        }
+        else{
+            url.searchParams.delete("keyword");
+        }
+        window.location.href = url.href;
+    });
+}
+//end search
+
+// display search result
+const urlSearch = new URL(window.location.href);
+const keyword = urlSearch.searchParams.get("keyword");
+if(keyword){
+    search.value = keyword;
+    listUser.forEach((user,index)=>{
+        if(user.name.toLowerCase().includes(keyword.toLowerCase())){
+            // delete all row in table
+            const row1 = table.querySelectorAll("tr");
+            row1.forEach((row,index)=>{
+                if(index>0){
+                    row.remove();
+                }
+            });
+            // fill data to table
+            const row = table.insertRow(1);
+            row.innerHTML = `
+                <td> 
+                    <input type="checkbox" name="id" value="" data-id="${user.id}">
+                </td>
+                <td>
+                    <div data-id="${user.id}"> ${index+1} </div>
+                </td>
+                <td>
+                    <img src="${user.avatar}" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+                </td>
+                <td>${user.name}</td>
+                <td> 
+                    <a class="badge bg-success" href="javascript:;" data-status="${user.status}" data-id="" button-change-status="button-change-status">Đang hoạt động
+                    </a>
+                </td>
+                <td> 
+                    <a class="btn btn-warning btn-sm" href="" data-id="${user.id}">Sửa</a>
+                    <a class="btn btn-danger btn-sm ml-1" button-delete="button-delete" data-id="${user.id}">Xóa </a>
+                    <a class="btn btn-info btn-sm ml-1" href="" data-id="${user.id}" button-detail="button-detail">Xem chi tiết</a>
+                </td>
+            `;
+        }
+    });
+}
+
 //detail button
 const buttonDetail = document.querySelectorAll("[button-detail]");
 if(buttonDetail.length >0){
@@ -70,4 +132,3 @@ if(buttonDetail.length >0){
         });
     });
 }
-
