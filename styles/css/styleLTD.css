@@ -43,3 +43,13 @@
     border-bottom: 1px solid #515151;
 }
 /* end header & sider */
+/* style chart */
+#myChart1 {
+    display: inline !important;
+    height: 70% !important;
+    width: 70% !important;
+}
+#myChart2 {
+    width: 100% !important;
+    height: 100% !important;
+}

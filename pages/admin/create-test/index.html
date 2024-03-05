@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contest Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../../styles/css/styleLTD.css" />
+    <!-- <script src="../../admin/script/button.js"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-3">
+                    <div class="inner-logo"><a href="./dashBoard.html">ADMIN </a></div>
+                </div>
+                <div class="col-9">
+                    <div class="text-right">
+                        <a class="btn btn-primary btn-sm" href="/admin/my-account">Lê Tiến Đạt </a><a
+                            class="btn btn-danger btn-sm" href="/admin/auth/logout">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="body">
+        <div class="sider">
+            <div class="inner-menu">
+                <ul>
+                    <li><a href="./dashBoard.html">Tổng quan </a></li>
+                    <li><a href="./user.html">Danh sách học viên</a></li>
+                    <li><a href="./contestManage.html">Danh sách bài thi</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main pr-3">
+            <h1 class="font-semibold text-4xl mb-3">Tạo đề thi</h1>
+            <div class="card mb-3">
+                <div class="card-header">Thông tin bài thi</div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <span>Tiêu đề: </span>
+                        <input class=" w-1/2 ml-3 focus:outline-none  border-b-[1px] font-bold text-xl" type="text"
+                            name="title" value="">
+                    </div>
+                    <div class="mb-3">
+                        <span>Thời gian bắt đầu: </span>
+                        <input class="focus:outline-none w-fit font-bold text-center ml-3 border-b-[1px]"
+                            type="datetime-local" name="time" value="">
+                    </div>
+                    <div class="mb-3">
+                        <span>Thời gian làm bài: </span>
+                        <input class="focus:outline-none w-1/12 font-bold text-center ml-3 border-b-[1px]" type="number"
+                            name="time" value="0">
+                        <span> phút</span>
+                    </div>
+                    <div class="mb-3">
+                        <span>Loại bài: </span>
+                        <select class="focus:outline-none ml-3 font-bold" name="status">
+                            <option value="practice">Luyện tập</option>
+                            <option value="test">Kiểm tra</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+
+                <div class="card mb-3 w-[1000px] h-fit">
+                    <div class="card-header">Thêm câu hỏi mới</div>
+                    <div class="card-body">
+                        <div class="mb-2">
+                            <span>Loại câu hỏi: </span>
+                            <select class="focus:outline-none ml-2" name="status" id="select-question-type"
+                                onchange="toggleInputType()">
+                                <option value="single-answer">Một đáp án</option>
+                                <option value="multiple-answers">Nhiều đáp án</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-4 ">
+                            <span class="input-group-text">Câu hỏi:</span>
+                            <textarea class="form-control h-10 " aria-label="With textarea"
+                                placeholder="Ai đẹp trai nhất nhóm?"></textarea>
+                        </div>
+                        <div class="input-group  mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                                <input class="form-check-input question-answer-input" type="radio"
+                                    name="flexRadioDefault" id="flexRadioDefault1">
+                                <span class="ml-2">A:</span>
+                            </span>
+                            <textarea class="form-control h-8 " placeholder="Lê Tiến Đạt"
+                                aria-label="With textarea"></textarea>
+                        </div>
+                        <div class="input-group  mb-3 ">
+                            <span class="input-group-text" id="basic-addon1">
+                                <input class="form-check-input question-answer-input" type="radio"
+                                    name="flexRadioDefault" id="flexRadioDefault2">
+                                <span class="ml-2">B:</span>
+                            </span>
+                            <textarea class="form-control h-8 " placeholder="Trần Anh Đức"
+                                aria-label="With textarea"></textarea>
+                        </div>
+                        <div class="input-group  mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                                <input class="form-check-input question-answer-input" type="radio"
+                                    name="flexRadioDefault" id="flexRadioDefault3">
+                                <span class="ml-2">C:</span>
+                            </span>
+                            <textarea class="form-control h-8 " placeholder="Nguyễn Anh Vũ"
+                                aria-label="With textarea"></textarea>
+                        </div>
+                        <div class="input-group  mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                                <input class="form-check-input question-answer-input" type="radio"
+                                    name="flexRadioDefault" id="flexRadioDefault4">
+                                <span class="ml-2">D:</span>
+                            </span>
+                            <textarea class="form-control h-8 " placeholder="Nguyễn Đăng Minh"
+                                aria-label="With textarea"></textarea>
+                        </div>
+
+                        <div class="flex justify-center">
+                            <button class="btn btn-outline-success" type="button">Thêm câu hỏi</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="card mb-3 w-full">
+                    <div class="card-header"> Danh sách câu hỏi
+                    </div>
+                    <div class="card-body">
+                        <!-- Display questions and answers -->
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <span>1. Ai đẹp trai nhất nhóm?</span>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-outline-primary">Sửa</button>
+                                        <button class="btn btn-outline-danger">Xóa</button>
+                                    </div>
+
+                                    <div>
+
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <div class="mb-2">
+                                        <span class="ml-2">A: Lê Tiến Đạt</span>
+                                    </div>
+                                    <div class="mb-2">
+                                        <span class="ml-2">B: Trần Anh Đức</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+                integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+                crossorigin="anonymous"></script>
+            <!-- <script type="module" src="../../admin/script/button.js"></script>
+                                <script type="module" src="../../admin/script/test.js"></script> -->
+            <link rel="stylesheet" href="../../../styles/css/styleLTD.css" />
+</body>
+<script src="./scripts/main.js"></script>
+
+</html>

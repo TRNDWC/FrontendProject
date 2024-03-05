@@ -20,8 +20,11 @@
           </div>
           <div class="col-9">
             <div class="text-right">
-              <a class="btn btn-primary btn-sm" href="#">Lê Tiến Đạt </a
-              ><a class="btn btn-danger btn-sm" href="#">Logout</a>
+              <a class="btn btn-primary btn-sm" href="/admin/my-account" style = "margin-right: 10px; margin-left: auto;"
+                >Lê Tiến Đạt </a
+              ><a class="btn btn-danger btn-sm" href="/admin/auth/logout" style="margin-right: 100px; margin-left: auto;"
+                >Logout</a
+              >
             </div>
           </div>
         </div>
@@ -94,13 +97,13 @@
                     class="btn btn-sm ml-1 btn-outline-success"
                     button-status="active"
                   >
-                    Đang hoạt động
+                    Đã hoàn thành
                   </button>
                   <button
                     class="btn btn-sm ml-1 btn-outline-success"
                     button-status="deactive"
                   >
-                    Đã kết thúc
+                    Chưa hoàn thành
                   </button>
                 </div>
                 <div class="col-6">
@@ -109,7 +112,7 @@
                       <input
                         class="form-control"
                         type="text"
-                        placeholder="Tìm kiếm bài thi"
+                        placeholder="Tìm kiếm người dự thi"
                         name="keyword"
                         value=""
                       />
@@ -176,15 +179,18 @@
           <div class="col-6">
             <div class="card mb-4">
               <div class="card-header">Tổng số bài thi</div>
-              <div class="card-body" table-1="table-1">
-                
+              <div class="card-body" table-1="table-1"></div>
+              <div>
+                <canvas id="myChart1" class="chartSta" ></canvas>
               </div>
             </div>
           </div>
           <div class="col-6">
             <div class="card mb-4">
               <div class="card-header">Tổng kết điểm thi</div>
-              <div class="card-body" table-2="table-2">
+              <div class="card-body" table-2="table-2"></div>
+              <div>
+                <canvas id="myChart2" class="chartSta" ></canvas>
               </div>
             </div>
           </div>
@@ -203,6 +209,9 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- chart -->
     <script type="module" src="../../../pages/admin/script/detailTest.js"></script>
     <link rel="stylesheet" href="../../../styles/css/styleLTD.css" />
   </body>

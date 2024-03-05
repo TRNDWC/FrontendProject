@@ -19,8 +19,11 @@
           </div>
           <div class="col-9">
             <div class="text-right">
-              <a class="btn btn-primary btn-sm" href="#">Lê Tiến Đạt </a
-              ><a class="btn btn-danger btn-sm" href="#">Logout</a>
+              <a class="btn btn-primary btn-sm" href="/admin/my-account" style = "margin-right: 10px; margin-left: auto;"
+                >Lê Tiến Đạt </a
+              ><a class="btn btn-danger btn-sm" href="/admin/auth/logout" style="margin-right: 100px; margin-left: auto;"
+                >Logout</a
+              >
             </div>
           </div>
         </div>
@@ -57,7 +60,6 @@
                     type="text"
                     name="name"
                     value=""
-                    readonly="readonly"
                 />
                 <div>
                     <label for="email"><b> Email </b></label>
@@ -74,7 +76,7 @@
                     <input
                         class="form-control"
                         id="password"
-                        type="text"
+                        type="password"
                         password="password"
                         value=""
                     >
@@ -95,27 +97,7 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-6">
-                  <button
-                    class="btn btn-sm ml-1 btn-outline-success active"
-                    button-status=""
-                  >
-                    Tất cả
-                  </button>
-                  <button
-                    class="btn btn-sm ml-1 btn-outline-success"
-                    button-status="active"
-                  >
-                    Đang hoạt động
-                  </button>
-                  <button
-                    class="btn btn-sm ml-1 btn-outline-success"
-                    button-status="deactive"
-                  >
-                    Đã kết thúc
-                  </button>
-                </div>
-                <div class="col-6">
-                  <form id="form-search">
+                  <form id="form-search" href =".">
                     <div class="input-group mb-3">
                       <input
                         class="form-control"
@@ -125,7 +107,7 @@
                         value=""
                       />
                       <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="submit">
+                        <button class="btn btn-outline-secondary" type="submit" btn="btnsearch">
                           Tìm kiếm
                         </button>
                       </div>
