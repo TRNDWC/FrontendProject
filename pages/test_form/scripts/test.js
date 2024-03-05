@@ -116,7 +116,7 @@ function getMenuItemHtml(index) {
 </div>`;
 }
 
-function buttonClick(index) {
+function buttonClick(index, isMenu = true) {
     currentQuestion = index;
     setUpQuestions();
     for (let i = 0; i < questions.length; i++) {
@@ -134,8 +134,10 @@ function buttonClick(index) {
     let id = 'question' + (index+1);
     let question = document.getElementById(id);
     question.style.outline = '2px solid #B82441';
-    let topPos = question.offsetTop;
-    document.scrollingElement.scrollTop = topPos - 150;
+    if (isMenu) {
+        let topPos = question.offsetTop;
+        document.scrollingElement.scrollTop = topPos - 150;
+    }
 }
 
 
@@ -174,10 +176,11 @@ function getTimeFormat(time) {
     }
 }
 
+
 function onAnswerClick(index) {
     let userAnswer = document.querySelector(`input[name="question${index + 1}"]:checked`);
     questions[index].setUserAnswer(userAnswer.value);
-    buttonClick(index);
+    buttonClick(index, false);
 }
 
 

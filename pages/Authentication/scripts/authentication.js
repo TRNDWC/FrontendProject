@@ -54,7 +54,9 @@ function checkSignUp(){
     let check = document.getElementById("check").checked;
     if(check){
         if(checkValidEmail() && checkValidPassword() && checkValidConfirmPassword()){
-            window.location.href = "";
+            console.log("Sign up successful");
+            window.location.href = "signin.html"
+            // alert("Sign up successful");
             return true;
         } else {
             return false;
@@ -66,16 +68,16 @@ function checkSignUp(){
 }
 
 function checkSignIn(){
-    console.log("checkSignIn");
+    // window.location.href = "../user/home.html";
     var email = document.getElementById("email").value;
     var pass = document.getElementById("password").value;
     if(email === "" || password === ""){
         alert("Please fill all fields");
         return false;
     } else {
-        if(email === mail && pass=== password){
+        if(email === mail && pass === password){
             console.log("Login successful");
-            window.location.href = "";
+            window.location.href = "../user/home.html";
             return true;
         } else {
             console.log("Email or password is incorrect");

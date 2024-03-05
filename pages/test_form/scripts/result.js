@@ -64,6 +64,11 @@ var questions = [
 setUpDetail();
 
 function setUpDetail() {
+
+    questions.forEach(question => {
+        question.setUserAnswer(question.correctAnswer);
+    });
+
     let detailElement = document.getElementById('detail');
     let detailHtml = '';
     questions.forEach((question, index) => {
