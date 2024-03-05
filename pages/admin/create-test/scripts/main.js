@@ -169,5 +169,6 @@ function saveTest() {
     console.log(test);
     localStorage.setItem("test", JSON.stringify(test));
     alert("Lưu thành công");
+    window.location.href = "../contestManage.html";
 }
 
