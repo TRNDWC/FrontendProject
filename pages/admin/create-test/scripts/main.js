@@ -161,3 +161,13 @@ function deleteQuestion(e) {
     resetListQuestion();
 }
 
+function saveTest() {
+    console.log("saveTest");
+    const test = {
+        questions
+    }
+    console.log(test);
+    localStorage.setItem("test", JSON.stringify(test));
+    alert("Lưu thành công");
+}
+
