@@ -189,6 +189,16 @@ switch(typeSort){
                 </td>
             `;
         });
+        //change text
+        const sort = document.querySelector("[sort-select]");
+        if(sort){
+            // get value of sort
+            const url = new URL(window.location.href);
+            const typeSort = url.searchParams.get("sort");
+            if(typeSort){
+                sort.value = typeSort;
+            }
+        }
         break;
     case "title-desc":
         listUser.sort((a,b)=>{
@@ -227,6 +237,16 @@ switch(typeSort){
                 </td>
             `;
         });
+        //change text
+        const sort1 = document.querySelector("[sort-select]");
+        if(sort1){
+            // get value of sort
+            const url = new URL(window.location.href);
+            const typeSort = url.searchParams.get("sort");
+            if(typeSort){
+                sort1.value = typeSort;
+            }
+        }
         break;
     default:
         break;
