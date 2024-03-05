@@ -47,11 +47,14 @@
 
 <body>
   <!-- For Header -->
-  <div class="flex justify-between">
+  <div class="flex justify-between px-5 py-3">
+    <img src="https://ptit.daotaotuxa.net/wp-content/uploads/2022/10/Logo-2.webp" alt="" style="height: 80px">
     <div class="flex justify-center items-center ml-5">
       <div>Xin chào, Vũ</div>
+      <div class="ml-5">
+        <a href="../Authentication/signin.html" class="text-red-500">Đăng xuất</a>
+      </div>
     </div>
-    <img src="https://ptit.daotaotuxa.net/wp-content/uploads/2022/10/Logo-2.webp" alt="" style="height: 80px">
   </div>
 
   <hr>
@@ -61,14 +64,14 @@
     <div class="flex items-center mt-4">
       <!-- For Type search -->
       <button type="button" class="bg-red-500 text-white px-4 py-2 rounded dropdown-toggle ml-4" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
+        id="type" aria-haspopup="true" aria-expanded="false">
         Thể loại
       </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#" onclick="searchByType('Luyện tập')">Luyện tập</a>
-        <a class="dropdown-item" href="#" onclick="searchByType('Giữa kì')">Giữa kì</a>
-        <a class="dropdown-item" href="#" onclick="searchByType('Cuối kì')">Cuối kì</a>
-        <a class="dropdown-item" href="#" onclick="searchByType('All')">Tất cả</a>
+      <div class="dropdown-menu" id = "types">
+        <a class="dropdown-item" href="#" onclick="onTypeChange('Luyện tập')">Luyện tập</a>
+        <a class="dropdown-item" href="#" onclick="onTypeChange('Giữa kì')">Giữa kì</a>
+        <a class="dropdown-item" href="#" onclick="onTypeChange('Cuối kì')">Cuối kì</a>
+        <a class="dropdown-item" href="#" onclick="onTypeChange('Tất cả')">Tất cả</a>
       </div>
 
       <!-- For Start and End date search -->
@@ -98,12 +101,12 @@
           <path
             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
         </svg>
-        <input type="text" class="form-control rounded" placeholder="Tên bài" name="name">
+        <input type="text" class="form-control rounded" placeholder="Tên bài" name="name" id="title">
       </div>
     </div>
     <!-- For Filter Button -->
     <button type="button" class="bg-red-500 text-white py-2 rounded ml-4 mt-4 flex justify-evenly" style="width: 80px"
-      onclick="searchByDate()">
+      onclick="onFilter()">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel mt-1"
         viewBox="0 0 16 16">
         <path

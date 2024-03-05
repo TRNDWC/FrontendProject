@@ -30,44 +30,21 @@ class Question {
         this.isCorrect = isCorrect;
     }
     setUserAnswer(userAnswer) {
-        this.userAnswer = this.correctAnswer;
+        this.userAnswer = userAnswer;
         let myAnswer = this.userAnswer.split(' ')[0];
         let correctAnswer = this.correctAnswer.split(' ')[0];
         this.isCorrect = myAnswer === correctAnswer;
     }
 }
 
-var questions = [
-    new Question(1, 'What is the capital of France?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Paris'),
-    new Question(2, 'What is the capital of Germany?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Berlin'),
-    new Question(3, 'What is the capital of Spain?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Madrid'),
-    new Question(4, 'What is the capital of England?', ['Paris', 'London', 'Berlin', 'Madrid'], 'London'),
-    new Question(5, 'What is the capital of Italy?', ['Paris', 'London', 'Rome', 'Madrid'], 'Rome'),
-    new Question(6, 'What is the capital of France?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Paris'),
-    new Question(7, 'What is the capital of Germany?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Berlin'),
-    new Question(8, 'What is the capital of Spain?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Madrid'),
-    new Question(9, 'What is the capital of England?', ['Paris', 'London', 'Berlin', 'Madrid'], 'London'),
-    new Question(10, 'What is the capital of Italy?', ['Paris', 'London', 'Rome', 'Madrid'], 'Rome'),
-    new Question(11, 'What is the capital of France?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Paris'),
-    new Question(12, 'What is the capital of Germany?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Berlin'),
-    new Question(13, 'What is the capital of Spain?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Madrid'),
-    new Question(14, 'What is the capital of England?', ['Paris', 'London', 'Berlin', 'Madrid'], 'London'),
-    new Question(15, 'What is the capital of Italy?', ['Paris', 'London', 'Rome', 'Madrid'], 'Rome'),
-    new Question(16, 'What is the capital of France?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Paris'),
-    new Question(17, 'What is the capital of Germany?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Berlin'),
-    new Question(18, 'What is the capital of Spain?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Madrid'),
-    new Question(19, 'What is the capital of England?', ['Paris', 'London', 'Berlin', 'Madrid'], 'London'),
-    new Question(20, 'What is the capital of Italy?', ['Paris', 'London', 'Rome', 'Madrid'], 'Rome')];
-
-
 
 setUpDetail();
 
 function setUpDetail() {
 
-    questions.forEach(question => {
-        question.setUserAnswer(question.correctAnswer);
-    });
+    let data = localStorage.getItem('questions');
+    let questions = JSON.parse(data);
+    console.log(questions, typeof questions);
 
     let detailElement = document.getElementById('detail');
     let detailHtml = '';
@@ -75,7 +52,7 @@ function setUpDetail() {
         detailHtml += getQuestionDetail(index, question.question, question.userAnswer, question.correctAnswer);
     });
     detailElement.innerHTML = detailHtml;
-    console.log(detailHtml);
+    // console.log(detailHtml);
 }
 
 function getQuestionDetail(index, question, myAnswer, correctAnswer) {

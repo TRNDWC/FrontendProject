@@ -86,3 +86,7 @@ function checkSignIn(){
         }
     }
 }
+
+function goToAdmin(){
+    window.location.href = "../admin/signin.html";
+}

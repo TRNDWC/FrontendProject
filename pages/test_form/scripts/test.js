@@ -24,6 +24,18 @@ function setUpAnswers() {
     });
 }
 
+class Test {
+    constructor(id, type, name, date, duration, time, questions) {
+      this.id = id;
+      this.type = type;
+      this.name = name;
+      this.date = date;
+      this.duration = duration;
+      this.time = time;
+      this.questions = questions;
+    }
+  }
+
 var questions = [
     new Question(1, 'What is the capital of France?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Paris'),
     new Question(2, 'What is the capital of Germany?', ['Paris', 'London', 'Berlin', 'Madrid'], 'Berlin'),
@@ -54,6 +66,12 @@ setUpQuestions();
 setUpMenu();
 
 function setUpMenu(){
+    let data = JSON.parse(localStorage.getItem('test'));
+    // casting data to Test object
+    data = new Test(data.id, data.type, data.name, data.date, data.duration, data.time, data.questions);
+    console.log(data, typeof data);
+    let questions = data.questions;
+    console.log(questions, typeof questions);
     let menuArea = document.getElementById('menu-area');
     questions.forEach((question, index) => {
         menuArea.innerHTML += getMenuItemHtml(index);
@@ -201,6 +219,8 @@ function onSubmitClick() {
             none++;
         }
     });
+    // luu ket qua vao localStorage
+    localStorage.setItem('questions', JSON.stringify(questions));
     // them parameter vao url
     window.location.href = 'result.html?correct=' + correct + '&wrong=' + wrong + '&none=' + none;
 }
