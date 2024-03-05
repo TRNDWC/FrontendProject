@@ -132,3 +132,122 @@ if(buttonDetail.length >0){
         });
     });
 }
+
+//get type of sort
+const sort = document.querySelector("[sort-select]");
+if(sort){
+    const url = new URL(window.location.href);
+    sort.addEventListener("change",(event)=>{
+        const value = event.target.value;
+        if(value){
+            url.searchParams.set("sort",value);
+        }
+        else{
+            url.searchParams.delete("sort");
+        }
+        window.location.href = url.href;
+    });
+}
+
+//sort
+const urlSort = new URL(window.location.href);
+const typeSort = urlSort.searchParams.get("sort");
+switch(typeSort){
+    case "title-asc":
+        listUser.sort((a,b)=>{
+            return a.name.localeCompare(b.name);
+        });
+        //delete all row in table
+        const row1 = table.querySelectorAll("tr");
+        row1.forEach((row,index)=>{
+            if(index>0){
+                row.remove();
+            }
+        });
+        // fill data to table
+        listUser.forEach((user,index)=>{
+            const row = table.insertRow(index+1);
+            row.innerHTML = `
+                <td> 
+                    <input type="checkbox" name="id" value="" data-id="${user.id}">
+                </td>
+                <td>
+                    <div data-id="${user.id}"> ${index+1} </div>
+                </td>
+                <td>
+                    <img src="${user.avatar}" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+                </td>
+                <td>${user.name}</td>
+                <td> 
+                    <a class="badge bg-success" href="javascript:;" data-status="${user.status}" data-id="" button-change-status="button-change-status">Đang hoạt động
+                    </a>
+                </td>
+                <td> 
+                    <a class="btn btn-warning btn-sm" href="" data-id="${user.id}">Sửa</a>
+                    <a class="btn btn-danger btn-sm ml-1" button-delete="button-delete" data-id="${user.id}">Xóa </a>
+                    <a class="btn btn-info btn-sm ml-1" href="" data-id="${user.id}" button-detail="button-detail">Xem chi tiết</a>
+                </td>
+            `;
+        });
+        //change text
+        const sort = document.querySelector("[sort-select]");
+        if(sort){
+            // get value of sort
+            const url = new URL(window.location.href);
+            const typeSort = url.searchParams.get("sort");
+            if(typeSort){
+                sort.value = typeSort;
+            }
+        }
+        break;
+    case "title-desc":
+        listUser.sort((a,b)=>{
+            // sort by last word
+            return b.name.localeCompare(a.name);
+        });
+        //delete all row in table
+        const row2 = table.querySelectorAll("tr");
+        row2.forEach((row,index)=>{
+            if(index>0){
+                row.remove();
+            }
+        });
+        // fill data to table
+        listUser.forEach((user,index)=>{
+            const row = table.insertRow(index+1);
+            row.innerHTML = `
+                <td> 
+                    <input type="checkbox" name="id" value="" data-id="${user.id}">
+                </td>
+                <td>
+                    <div data-id="${user.id}"> ${index+1} </div>
+                </td>
+                <td>
+                    <img src="${user.avatar}" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+                </td>
+                <td>${user.name}</td>
+                <td> 
+                    <a class="badge bg-success" href="javascript:;" data-status="${user.status}" data-id="" button-change-status="button-change-status">Đang hoạt động
+                    </a>
+                </td>
+                <td> 
+                    <a class="btn btn-warning btn-sm" href="" data-id="${user.id}">Sửa</a>
+                    <a class="btn btn-danger btn-sm ml-1" button-delete="button-delete" data-id="${user.id}">Xóa </a>
+                    <a class="btn btn-info btn-sm ml-1" href="" data-id="${user.id}" button-detail="button-detail">Xem chi tiết</a>
+                </td>
+            `;
+        });
+        //change text
+        const sort1 = document.querySelector("[sort-select]");
+        if(sort1){
+            // get value of sort
+            const url = new URL(window.location.href);
+            const typeSort = url.searchParams.get("sort");
+            if(typeSort){
+                sort1.value = typeSort;
+            }
+        }
+        break;
+    default:
+        break;
+}
