@@ -214,6 +214,13 @@ function changeToText(id) {
   let js = JSON.stringify(test);
   localStorage.setItem('test', js);
   console.log('changeToText', test);
+  // check ngoài thời gian thì return
+  let date = new Date(test.date);
+  let now = new Date();
+  if (date > now) {
+    alert('Chưa đến thời gian làm bài');
+    return;
+  }
   window.location.href = '../test_form/test.html';
 }
 
